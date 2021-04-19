@@ -86,7 +86,7 @@ body {
   width: 3px;
   height: 100%;
   background: transparent;
-  transition: background 0.3s ease-in-out;
+  transition: background 0.2s ease-in-out;
 }
 .menu__item:hover::before {
   background: #0093ee;
@@ -166,9 +166,6 @@ body {
 .table__row {
   position: relative;
 }
-.table__row:first-child {
-  justify-self: start;
-}
 .table__row::before {
   content: "";
   display: block;
@@ -196,7 +193,7 @@ body {
   display: none;
   position: absolute;
   top: 0;
-  right: -55px;
+  right: -30px;
 }
 
 .table__footer {
@@ -258,6 +255,10 @@ body {
   grid-template: repeat(8, 1fr)/1fr;
 }
 
+.main__workers {
+  grid-template: repeat(9, 1fr)/1fr;
+}
+
 .table__property--more-items,
 .table__row--more-items {
   grid-template-columns: repeat(7, 1fr);
@@ -265,9 +266,27 @@ body {
 
 .row__item--user-logo {
   display: flex;
-  justify-content: center;
+  justify-self: start;
   align-items: center;
+  margin-left: 10px;
 }
 .row__item--user-logo img {
   margin-right: 10px;
+  border-radius: 5px;
+}
+
+.row__item--color-blue {
+  color: #0093ee;
+}
+
+.row__item--color-green {
+  color: #4ece3d;
+}
+
+.row__item--color-error {
+  color: #ff151f;
+}
+
+.table__row--less-items {
+  grid-template-columns: repeat(2, 1fr);
 }

@@ -85,7 +85,7 @@ body{
     width: 3px;
     height: 100%;
     background: transparent;
-    transition: background .3s ease-in-out;
+    transition: background .2s ease-in-out;
   }
   &:hover::before{
     background: $accent-color;
@@ -158,9 +158,9 @@ body{
 }
 .table__row{
   position: relative;
-  &:first-child{
-    justify-self: start;
-  }
+  // &:first-child{
+  //   justify-self: start;
+  // }
    &::before{
     content: "";
     display: block;
@@ -187,7 +187,7 @@ body{
     display: none;
     position: absolute;
     top: 0;
-    right: -55px;
+    right: -30px;
   }
 }
 .table__footer{
@@ -241,15 +241,32 @@ body{
   grid-column: 1 / 3;
   grid-template: repeat(8, 1fr) / 1fr;
 }
+.main__workers{
+  grid-template: repeat(9, 1fr)  / 1fr;
+}
 .table__property--more-items,
 .table__row--more-items{
   grid-template-columns: repeat(7, 1fr);
 }
 .row__item--user-logo{
   display: flex;
-  justify-content: center;
+  justify-self: start;
   align-items: center;
+  margin-left: 10px;
   img{
     margin-right: 10px;
+    border-radius: 5px;
   }
+}
+.row__item--color-blue{
+  color: $accent-color;
+}
+.row__item--color-green{
+  color: $accent-color2;
+}
+.row__item--color-error{
+  color: rgba(255, 21, 31, 1);
+}
+.table__row--less-items{
+  grid-template-columns: repeat(2, 1fr);
 }

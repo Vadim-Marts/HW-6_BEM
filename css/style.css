@@ -290,3 +290,13 @@ body {
 .table__row--less-items {
   grid-template-columns: repeat(2, 1fr);
 }
+
+.footer__copyright {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  font-size: 13px;
+  line-height: 19px;
+  text-align: right;
+  margin-bottom: 20px;
+}

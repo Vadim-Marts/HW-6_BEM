@@ -153,10 +153,12 @@ body {
   align-items: center;
   cursor: pointer;
   border-bottom: 1px solid #334b69;
+  padding: 11px 0;
 }
 
 .property__item {
   display: flex;
+  text-transform: uppercase;
 }
 
 .item__text {
@@ -186,6 +188,10 @@ body {
   display: block;
 }
 
+.row-item {
+  position: relative;
+}
+
 .row__item--more-btn {
   position: relative;
 }
@@ -204,6 +210,7 @@ body {
   font-size: 14px;
   line-height: 21px;
   letter-spacing: 0.25px;
+  padding: 11px 0;
 }
 
 .rows-page {
@@ -299,4 +306,130 @@ body {
   line-height: 19px;
   text-align: right;
   margin-bottom: 20px;
+}
+
+body,
+.main {
+  background: #212f40;
+}
+
+.gueue__health {
+  grid-template: auto;
+}
+
+.main__sub-title {
+  font-size: 17px;
+  line-height: 22px;
+  margin-bottom: 21px;
+}
+
+.select-wrapper {
+  position: relative;
+}
+.select-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  display: block;
+  width: 18px;
+  height: 18px;
+  background-image: url(../images/phone-logo.png);
+  background-size: cover;
+}
+
+.select-phone {
+  width: 345px;
+  background: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #4ece3d;
+  margin-bottom: 17px;
+  padding: 5px;
+  padding-left: 25px;
+  position: relative;
+  font-size: 15px;
+  line-height: 22px;
+}
+.select-phone option {
+  background: #212f40;
+}
+
+.circle-color {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.circle-color--green {
+  background: #4ece3d;
+}
+
+.circle-color--yellow {
+  background: #faca00;
+}
+
+.circle-color--red {
+  background: #ff151f;
+}
+
+.icon-arrow--green {
+  margin-left: 5px;
+}
+.icon-arrow--green::before {
+  color: #4ece3d;
+}
+
+.table__row--bottom-property {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.property-color {
+  color: #8dabc4;
+}
+
+.footer__pages {
+  display: flex;
+}
+
+.footer__page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 28px;
+  height: 28px;
+  border: 1px solid #3F536E;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-right: 5px;
+  padding: 0 10px;
+  cursor: pointer;
+}
+.footer__page:hover, .footer__page:hover .page__arrow {
+  color: #0093ee;
+  border-color: #0093ee;
+}
+
+.page__arrow {
+  width: 6px;
+  height: 6px;
+  border: 2px solid #fff;
+  border-right: none;
+  border-bottom: none;
+}
+
+.page__arrow--left {
+  transform: rotate(-45deg);
+}
+
+.page__arrow--right {
+  transform: rotate(135deg);
+}
+
+.main__metrics--dashboard-html {
+  grid-column: auto;
+}
+
+.main__inner--dashboard-html {
+  grid-template: 1fr 1fr/2fr 1fr;
 }

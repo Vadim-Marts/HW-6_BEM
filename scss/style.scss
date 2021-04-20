@@ -149,18 +149,17 @@ body{
   align-items: center;
   cursor: pointer;
   border-bottom: 1px solid $border-color;
+  padding: 11px 0;
 }
 .property__item{
   display: flex;
+  text-transform: uppercase;
 }
 .item__text{
   margin-right: 17px;
 }
 .table__row{
   position: relative;
-  // &:first-child{
-  //   justify-self: start;
-  // }
    &::before{
     content: "";
     display: block;
@@ -181,6 +180,9 @@ body{
     display: block;
   }
 }
+.row-item{
+ position: relative; 
+}
 .row__item--more-btn{
   position: relative;
   i{
@@ -198,6 +200,7 @@ body{
   font-size: 14px;
   line-height: 21px;
   letter-spacing: 0.25px;
+  padding: 11px 0;
 }
 .rows-page{
   margin-right: 30px;
@@ -279,4 +282,120 @@ body{
   line-height: 19px;
   text-align: right;
   margin-bottom: 20px;
+} 
+
+
+
+// Dashboard.html
+body, 
+.main{
+  background: rgba(33, 47, 64, 1);
+}
+.gueue__health{
+  grid-template: auto;
+}
+.main__sub-title{
+  font-size: 17px;
+  line-height: 22px;
+  margin-bottom: 21px;
+}
+.select-wrapper{
+  position: relative;
+  &::before{
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 0;
+    display: block;
+    width: 18px;
+    height: 18px;
+    background-image: url(../images/phone-logo.png);
+    background-size: cover;
+  }
+}
+.select-phone{
+  width: 345px;
+  background: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid $accent-color2;
+  margin-bottom: 17px;
+  padding: 5px;
+  padding-left: 25px;
+  position: relative;
+  font-size: 15px;
+  line-height: 22px;
+  option{
+    background: rgba(33, 47, 64, 1);
+  }
+}
+
+.circle-color{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.circle-color--green{
+  background: $accent-color2;
+}
+.circle-color--yellow{
+  background: rgba(250, 202, 0, 1);
+}
+.circle-color--red{
+  background: rgba(255, 21, 31, 1);
+}
+.icon-arrow--green{
+  margin-left: 5px;
+  &::before{
+    color: $accent-color2;  
+  }
+}
+.table__row--bottom-property{
+  grid-template-columns: repeat(3, 1fr);
+}
+.property-color{
+  color: $accent-text-color;
+}
+.footer__pages{
+  display: flex;
+}
+.footer__page{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 28px;
+  height: 28px;
+  border: 1px solid #3F536E;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-right: 5px;
+  padding: 0 10px;
+  cursor: pointer;
+  &:hover,
+  &:hover .page__arrow
+  {
+    color: $accent-color;
+    border-color: $accent-color;
+  }
+}
+.page__arrow{
+  width: 6px;
+  height: 6px;
+  border: 2px solid #fff;
+  border-right: none;
+  border-bottom: none;
+}
+.page__arrow--left{
+  transform: rotate(-45deg);
+}
+.page__arrow--right{
+  transform: rotate(135deg);
+}
+
+.main__metrics--dashboard-html{
+  grid-column: auto;
+  // grid-template: repeat(8, 1fr) / 1fr;
+}
+.main__inner--dashboard-html{
+  grid-template: 1fr 1fr / 2fr 1fr;
 }

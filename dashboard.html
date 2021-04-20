@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HW-6</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet">
+
+  <!-- Style -->
+  <link rel="stylesheet" href="css/reset.min.css">
+  <link rel="stylesheet" href="css/icons.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- Aside Start -->
+    <aside class="aside">
+      <div class="aside__logo">
+        <a href="#" class="logo__link"><img src="images/Logo.png" alt="logo"></a>
+      </div>
+      <nav class="menu">
+        <h2 class="menu__tittle">NextCase</h2>
+        <!-- Menu Top -->
+        <ul class="menu__list menu__top">
+          <li class="menu__item">
+            <a href="index.html" class="menu__link"><i class="icon-home"></i>home</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link"><i class="icon-alerts"></i>alerts</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link"><i class="icon-case"></i>add case</a>
+          </li>
+          <li class="menu__item">
+            <a href="dashboard.html" class="menu__link"><i class="icon-supervisor"></i>supervisor</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link"><i class="icon-reports"></i>reports</a>
+          </li>
+        </ul>
+
+        <!-- Menu Bottom -->
+        <ul class="menu__list menu__bottom">
+          <li class="menu__item">
+            <a href="#" class="menu__link"><i class="icon-message"></i>support</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link"><i class="icon-setting"></i>settings</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="aside__footer">
+        <div class="footer__user-logo"><img src="images/user-logo.png" alt="user-logo"> </div>
+        <div class="footer__user-name">Andrew Lloyd</div>
+        <div class="footer__bnt"><i class="icon-arrow"></i></div>
+      </div>
+    </aside>
+    <!-- Aside End -->
+
+    <!-- Main Start -->
+    <main class="main">
+      <h2 class="main__tittle">supervisor dashboard</h2>
+      <p class="main__sub-title">Access Point</p>
+      <div class="select-wrapper">
+        <select class="select-phone" name="select-phone" id="select-phone">
+          <option value="none" hidden="">Phones</option>
+          <option value="+380676314079">+380676314079</option>
+          <option value="+380676314079">+380676314079</option>
+          <option value="+380676314079">+380676314079</option>
+          <option value="+380676314079">+380676314079</option>
+        </select>
+      </div>
+      <div class="main__inner main__inner--dashboard-html">
+        <div class="gueue__health main__table">      
+          <div class="table__title">Queue Health</div>
+          <div class="table__property">
+            <div class="property__item">
+              <p class="item__text">QUEUE</p>
+              <i class="icon-serch"></i>
+            </div>
+            <div class="property__item">
+              <p class="item__text">health</p>
+              <i class="icon-Icon-up"></i>
+            </div>
+            <div class="property__item">
+              <p class="item__text">Cases Waiting</p>
+              <i class="icon-Icon-up"></i>
+            </div>
+            <div class="property__item">
+              <p class="item__text">AVG. WAIT</p>
+              <i class="icon-Icon-up"></i>
+            </div>
+            <div class="property__item">
+              <p class="item__text">Max. Wait</p>
+              <i class="icon-Icon-up"></i>
+            </div>
+          </div>
+          <div class="table__row">
+            <div class="row__item">Red</div>
+            <div class="row__item"> 
+              <div class="circle-color circle-color--green"></div> 
+            </div>
+            <div class="row__item">
+              50
+            <i class="icon-arrow icon-arrow--green"></i> 
+            </div>
+            <div class="row__item">
+              50 min
+            <i class="icon-arrow icon-arrow--green"></i>
+            </div>
+            <div class="row__item">
+              50 min
+            <i class="icon-arrow icon-arrow--green"></i>
+            </div>
+          </div>
+          <div class="table__row">
+            <div class="row__item">Red</div>
+            <div class="row__item"> 
+              <div class="circle-color circle-color--green"></div> 
+            </div>
+            <div class="row__item">
+              50
+            <i class="icon-arrow icon-arrow--green"></i> 
+            </div>
+            <div class="row__item">
+              50 min
+            <i class="icon-arrow icon-arrow--green"></i>
+            </div>
+            <div class="row__item">
+              50 min
+            <i class="icon-arrow icon-arrow--green"></i>
+            </div>
+          </div>
+          <div class="table__row">
+            <div class="row__item">Red</div>
+            <div class="row__item"> 
+              <div class="circle-color circle-color--green"></div> 
+            </div>
+            <div class="row__item">
+              50
+            <i class="icon-arrow icon-arrow--green"></i> 
+            </div>
+            <div class="row__item">
+              50 min
+            <i class="icon-arrow icon-arrow--green"></i>
+            </div>
+            <div class="row__item">
+              50 min
+            <i class="icon-arrow icon-arrow--green"></i>
+            </div>
+          </div>
+          <div class="table__row">
+            <div class="row__item">Red</div>
+            <div class="row__item"> 
+              <div class="circle-color circle-color--green"></div> 
+            </div>
+            <div class="row__item">
+              50
+            <i class="icon-arrow icon-arrow--green"></i> 
+            </div>
+            <div class="row__item">
+              50 min
+            <i class="icon-arrow icon-arrow--green"></i>
+            </div>
+            <div class="row__item">
+              50 min
+            <i class="icon-arrow icon-arrow--green"></i>
+            </div>
+          </div>
+          <div class="table__row">
+            <div class="row__item">Red</div>
+            <div class="row__item"> 
+              <div class="circle-color circle-color--green"></div> 
+            </div>
+            <div class="row__item">
+              50
+            <i class="icon-arrow icon-arrow--green"></i> 
+            </div>
+            <div class="row__item">
+              50 min
+            <i class="icon-arrow icon-arrow--green"></i>
+            </div>
+            <div class="row__item">
+              50 min
+            <i class="icon-arrow icon-arrow--green"></i>
+            </div>
+          </div>
+          <div class="table__row">
+            <div class="row__item">Red</div>
+            <div class="row__item"> 
+              <div class="circle-color circle-color--green"></div> 
+            </div>
+            <div class="row__item">
+              50
+            <i class="icon-arrow icon-arrow--green"></i> 
+            </div>
+            <div class="row__item">
+              50 min
+            <i class="icon-arrow icon-arrow--green"></i>
+            </div>
+            <div class="row__item">
+              50 min
+            <i class="icon-arrow icon-arrow--green"></i>
+            </div>
+          </div>
+          <div class="table__row">
+            <div class="row__item">Red</div>
+            <div class="row__item"> 
+              <div class="circle-color circle-color--green"></div> 
+            </div>
+            <div class="row__item">
+              50
+            <i class="icon-arrow icon-arrow--green"></i> 
+            </div>
+            <div class="row__item">
+              50 min
+            <i class="icon-arrow icon-arrow--green"></i>
+            </div>
+            <div class="row__item">
+              50 min
+            <i class="icon-arrow icon-arrow--green"></i>
+            </div>
+          </div>
+          <div class="table__row">
+            <div class="row__item">Red</div>
+            <div class="row__item"> 
+              <div class="circle-color circle-color--green"></div> 
+            </div>
+            <div class="row__item">
+              50
+            <i class="icon-arrow icon-arrow--green"></i> 
+            </div>
+            <div class="row__item">
+              50 min
+            <i class="icon-arrow icon-arrow--green"></i>
+            </div>
+            <div class="row__item">
+              50 min
+            <i class="icon-arrow icon-arrow--green"></i>
+            </div>
+          </div>
+          <div class="table__row">
+            <div class="row__item">Red</div>
+            <div class="row__item"> 
+              <div class="circle-color circle-color--green"></div> 
+            </div>
+            <div class="row__item">
+              50
+            <i class="icon-arrow icon-arrow--green"></i> 
+            </div>
+            <div class="row__item">
+              50 min
+            <i class="icon-arrow icon-arrow--green"></i>
+            </div>
+            <div class="row__item">
+              50 min
+            <i class="icon-arrow icon-arrow--green"></i>
+            </div>
+          </div>
+          <div class="table__row">
+            <div class="row__item">Red</div>
+            <div class="row__item"> 
+              <div class="circle-color circle-color--green"></div> 
+            </div>
+            <div class="row__item">
+              50
+            <i class="icon-arrow icon-arrow--green"></i> 
+            </div>
+            <div class="row__item">
+              50 min
+            <i class="icon-arrow icon-arrow--green"></i>
+            </div>
+            <div class="row__item">
+              50 min
+            <i class="icon-arrow icon-arrow--green"></i>
+            </div>
+          </div>
+          <div class="table__row">
+            <div class="row__item">Red</div>
+            <div class="row__item"> 
+              <div class="circle-color circle-color--green"></div> 
+            </div>
+            <div class="row__item">
+              50
+            <i class="icon-arrow icon-arrow--green"></i> 
+            </div>
+            <div class="row__item">
+              50 min
+            <i class="icon-arrow icon-arrow--green"></i>
+            </div>
+            <div class="row__item">
+              50 min
+            <i class="icon-arrow icon-arrow--green"></i>
+            </div>
+          </div>
+          <div class="table__row">
+            <div class="row__item">Red</div>
+            <div class="row__item"> 
+              <div class="circle-color circle-color--green"></div> 
+            </div>
+            <div class="row__item">
+              50
+            <i class="icon-arrow icon-arrow--green"></i> 
+            </div>
+            <div class="row__item">
+              50 min
+            <i class="icon-arrow icon-arrow--green"></i>
+            </div>
+            <div class="row__item">
+              50 min
+            <i class="icon-arrow icon-arrow--green"></i>
+            </div>
+          </div>
+          <div class="table__row">
+            <div class="row__item">Red</div>
+            <div class="row__item"> 
+              <div class="circle-color circle-color--green"></div> 
+            </div>
+            <div class="row__item">
+              50
+            <i class="icon-arrow icon-arrow--green"></i> 
+            </div>
+            <div class="row__item">
+              50 min
+            <i class="icon-arrow icon-arrow--green"></i>
+            </div>
+            <div class="row__item">
+              50 min
+            <i class="icon-arrow icon-arrow--green"></i>
+            </div>
+          </div>
+          <div class="table__row">
+            <div class="row__item">Red</div>
+            <div class="row__item"> 
+              <div class="circle-color circle-color--green"></div> 
+            </div>
+            <div class="row__item">
+              50
+            <i class="icon-arrow icon-arrow--green"></i> 
+            </div>
+            <div class="row__item">
+              50 min
+            <i class="icon-arrow icon-arrow--green"></i>
+            </div>
+            <div class="row__item">
+              50 min
+            <i class="icon-arrow icon-arrow--green"></i>
+            </div>
+          </div>
+          <div class="table__row">
+            <div class="row__item">Red</div>
+            <div class="row__item"> 
+              <div class="circle-color circle-color--green"></div> 
+            </div>
+            <div class="row__item">
+              50
+            <i class="icon-arrow icon-arrow--green"></i> 
+            </div>
+            <div class="row__item">
+              50 min
+            <i class="icon-arrow icon-arrow--green"></i>
+            </div>
+            <div class="row__item">
+              50 min
+            <i class="icon-arrow icon-arrow--green"></i>
+            </div>
+          </div>
+          <div class="table__row table__row--bottom-property">
+            <div class="row__item">
+              <span class="property-color">Tot. Cases Wait.</span>  
+              1000
+              <i class="icon-arrow"></i>
+            </div>
+            <div class="row__item">
+              <span class="property-color">Tot. Cases Wait.</span>  
+              1000
+              <i class="icon-arrow"></i>
+            </div>
+            <div class="row__item">
+              <span class="property-color">Tot. Cases Wait.</span>  
+              1000
+              <i class="icon-arrow"></i>
+            </div>
+          </div>
+          <div class="table__footer">
+            <div class="footer__pages">
+              <div class="footer__page">
+                <div class="page__arrow page__arrow--left"></div> 
+              </div>
+              <div class="footer__page">1</div>
+              <div class="footer__page">2</div>
+              <div class="footer__page">3</div>
+              <div class="footer__page">4</div>
+              <div class="footer__page">5</div>
+              <div class="footer__page">
+                <div class="page__arrow page__arrow--right"></div> 
+              </div>
+              <div class="footer__page">5/page</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="main__metrics main__table main__metrics--dashboard-html">
+          <div class="table__title">Worker Metrics</div>
+          <div class="table__property table__property--more-items">
+            <div class="property__item">
+              <p class="item__text">WORKER NAME</p>
+              <i class="icon-serch"></i>
+            </div>
+            <div class="property__item">
+              <p class="item__text">AVG. TXN TIME</p>
+              <i class="icon-sort"></i>
+            </div>
+            <div class="property__item">
+              <p class="item__text">CUM. UTIL.</p>
+              <i class="icon-sort"></i>
+            </div>
+          </div>
+          <div class="table__row table__row--more-items">
+            <div class="row__item row__item--user-logo">
+              <img src="images/user-logo2.png" alt="user-logo">
+              Alberta Dennis
+            </div>
+            <div class="row__item">60</div>
+            <div class="row__item row__item--more-btn row__item--color-green">
+              40 min
+              <i class="icon-more-btn"></i>
+            </div>
+          </div>
+          <div class="table__row table__row--more-items">
+            <div class="row__item row__item--user-logo">
+              <img src="images/user-logo3.png" alt="user-logo">
+              Glenn Olson
+            </div>
+            <div class="row__item">40</div>
+            <div class="row__item row__item--more-btn row__item--color-green row__item--color-error">
+              90 min
+              <i class="icon-more-btn"></i>
+            </div>
+          </div>
+          <div class="table__row table__row--more-items">
+            <div class="row__item row__item--user-logo">
+              <img src="images/user-logo4.png" alt="user-logo">
+              Delia Rose
+            </div>
+            <div class="row__item">35</div>
+            <div class="row__item row__item--more-btn row__item--color-green">
+              30 min
+              <i class="icon-more-btn"></i>
+            </div>
+          </div>
+          <div class="table__row table__row--more-items">
+            <div class="row__item row__item--user-logo">
+              <img src="images/user-logo5.png" alt="user-logo">
+              Jon Johnston
+            </div>
+            <div class="row__item">19</div>
+            <div class="row__item row__item--more-btn row__item--color-green">
+              25 min
+              <i class="icon-more-btn"></i>
+            </div>
+          </div>
+          <div class="table__row table__row--more-items">
+            <div class="row__item row__item--user-logo">
+              <img src="images/user-logo6.png" alt="user-logo">
+              Patty Massey
+            </div>
+            <div class="row__item">42</div>
+            <div class="row__item row__item--more-btn row__item--color-green">
+              60 min
+              <i class="icon-more-btn"></i>
+            </div>
+          </div>
+          
+          <div class="table__footer">
+            <div class="rows-page">Rows per page:</div>
+            <div class="num-rows-page">
+              14
+              <i class="icon-arrow icon-arrow--color"></i>
+            </div>
+            <div class="page-of">1-14 of 128</div>
+            <div class="prev-btn"></div>
+            <div class="next-btn"></div>
+          </div>
+        </div>`
+
+        <div class="main__workers main__table">
+          <div class="table__title">Worker Metrics</div>
+          <div class="table__row table__row--less-items">
+            <div class="row__item row__item--user-logo">
+              <img src="images/user-logo6.png" alt="user-logo">
+              Patty Massey
+            </div>
+            <div class="row__item row__item--more-btn row__item--color-green">
+              10 min
+              <i class="icon-more-btn"></i>
+            </div>
+          </div>
+          <div class="table__row table__row--less-items">
+            <div class="row__item row__item--user-logo">
+              <img src="images/user-logo7.png" alt="user-logo">
+              Andrew Smith
+            </div>
+            <div class="row__item row__item--more-btn row__item--color-green">
+              45 min
+              <i class="icon-more-btn"></i>
+            </div>
+          </div>
+          <div class="table__row table__row--less-items">
+            <div class="row__item row__item--user-logo">
+              <img src="images/user-logo8.png" alt="user-logo">
+              Mark Johnson
+            </div>
+            <div class="row__item row__item--more-btn row__item--color-green">
+              15 min
+              <i class="icon-more-btn"></i>
+            </div>
+          </div>
+          <div class="table__row table__row--less-items">
+            <div class="row__item row__item--user-logo">
+              <img src="images/user-logo9.png" alt="user-logo">
+              Janet Erickson
+            </div>
+            <div class="row__item row__item--more-btn row__item--color-green">
+              22 min
+              <i class="icon-more-btn"></i>
+            </div>
+          </div>
+        </div>
+        
+
+      </div>
+
+    </main>
+    <!-- Main End -->
+    <div class="footer">
+      <p class="footer__copyright">&copy; Change & Innovation Agency, All Rights Reserved</p>
+    </div>
+  </div>
+
+  <script src="script/script.js"></script>
+</body>
+
+</html>

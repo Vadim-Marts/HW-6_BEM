@@ -153,7 +153,6 @@ body {
   align-items: center;
   cursor: pointer;
   border-bottom: 1px solid #334b69;
-  padding: 11px 0;
 }
 
 .property__item {
@@ -427,9 +426,22 @@ body,
 }
 
 .main__metrics--dashboard-html {
-  grid-column: auto;
+  grid-column: 2/4;
+  grid-row: 1/2;
+}
+.main__metrics--dashboard-html .table__property,
+.main__metrics--dashboard-html .table__row {
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .main__inner--dashboard-html {
-  grid-template: 1fr 1fr/2fr 1fr;
+  grid-template: 1fr 1fr/2fr 1fr 1fr;
+}
+
+.gueue__health--dashboard-html {
+  grid-row: 1/3;
+}
+
+.main__workers----dashboard-html {
+  grid-row: 2;
 }
